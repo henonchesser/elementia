@@ -65,7 +65,7 @@ public class SpellButton : MonoBehaviour {
                 //if this slots empty put me there
                 if (thisSlot.IsEquiped() == false)
                 {
-                    thisSlot.EquipSelected(_activeSprite, gameObject);
+                    thisSlot.EquipSelected(_inactiveSprite, gameObject);
                     ToggleActive();
                     return;
                 }
