@@ -60,11 +60,12 @@ public class SpellButton : MonoBehaviour {
             foreach(Transform slot in _playerPanel.transform)
             {
                 var thisSlot = slot.gameObject.GetComponent<BattleSlot>();
-                //Debug.Log("My Child " + slot + " is equiped = " + thisSlot.IsEquiped());
+               
 
                 //if this slots empty put me there
                 if (thisSlot.IsEquiped() == false)
                 {
+                    GetComponent<AudioSource>().Play();
                     thisSlot.EquipSelected(_inactiveSprite, gameObject);
                     ToggleActive();
                     return;
