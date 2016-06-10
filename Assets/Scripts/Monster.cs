@@ -20,7 +20,7 @@ public class Monster : MonoBehaviour {
     void Start () {
         _transform = transform;
         _target = _transform.position;
-        _target.x -= 8;
+        _target.x -= 7;
         _battleReady = true;
     }
 	
